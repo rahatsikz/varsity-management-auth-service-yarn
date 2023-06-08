@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\Next Level Course\\varsity-management-auth-service-yarn\\logs\\winston\\error\\.e69de59066f875d9e08d1644a5a659fd01eaac69-audit.json",
+    "files": [
+        {
+            "date": 1686216820898,
+            "name": "E:\\Next Level Course\\varsity-management-auth-service-yarn\\logs\\winston\\error\\rat-2023-08-06-15-error.log",
+            "hash": "6afdf2ef548b1318704c3069b97b3742666e026b18505431052f994c0e92d393"
+        }
+    ],
+    "hashType": "sha256"
+}
