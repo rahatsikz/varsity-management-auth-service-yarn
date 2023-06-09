@@ -3,6 +3,7 @@ import cors from 'cors'
 import { UserRoutes } from './app/modules/user/user.route'
 // import { ApiError } from './errors/ApiError'
 import globarErrorHandler from './app/middlewares/globalErrorHandler'
+import { SemesterRoutes } from './app/modules/academicSemester/academicSemester.route'
 const app: Application = express()
 
 app.use(cors())
@@ -18,6 +19,7 @@ app.get('/', async () => {
 })
 
 app.use('/api/v2/user', UserRoutes)
+app.use('/api/v2/semester', SemesterRoutes)
 
 app.use(globarErrorHandler)
 
