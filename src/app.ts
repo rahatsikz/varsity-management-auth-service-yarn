@@ -9,10 +9,12 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', () => {
+app.get('/', async () => {
   //   res.send('Hello World!')
   //   throw new ApiError(400, 'Myself error')
-  //   next('error ashse')
+  // next('error ashse')
+  // Promise.reject(new Error('Unhandled promise rejection'))
+  throw new Error('Uncaught exception detected')
 })
 
 app.use('/api/v2/user', UserRoutes)
