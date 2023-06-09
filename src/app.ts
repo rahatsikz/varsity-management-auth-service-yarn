@@ -10,6 +10,9 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+// route
+app.use('/api/v2', routes)
+
 app.get('/', async () => {
   //   res.send('Hello World!')
   //   throw new ApiError(400, 'Myself error')
@@ -20,9 +23,6 @@ app.get('/', async () => {
 
 // app.use('/api/v2/user', UserRoutes)
 // app.use('/api/v2/semester', SemesterRoutes)
-
-// route
-app.use('/api/v2', routes)
 
 app.use(globarErrorHandler)
 
