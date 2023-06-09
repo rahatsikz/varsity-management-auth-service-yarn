@@ -1,9 +1,9 @@
 import express, { Application } from 'express'
 import cors from 'cors'
-import { UserRoutes } from './app/modules/user/user.route'
 // import { ApiError } from './errors/ApiError'
 import globarErrorHandler from './app/middlewares/globalErrorHandler'
-import { SemesterRoutes } from './app/modules/academicSemester/academicSemester.route'
+import routes from './app/routes/index'
+
 const app: Application = express()
 
 app.use(cors())
@@ -18,8 +18,11 @@ app.get('/', async () => {
   throw new Error('Uncaught exception detected')
 })
 
-app.use('/api/v2/user', UserRoutes)
-app.use('/api/v2/semester', SemesterRoutes)
+// app.use('/api/v2/user', UserRoutes)
+// app.use('/api/v2/semester', SemesterRoutes)
+
+// route
+app.use('/api/v2', routes)
 
 app.use(globarErrorHandler)
 
