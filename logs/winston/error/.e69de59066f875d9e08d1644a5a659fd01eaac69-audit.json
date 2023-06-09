@@ -59,6 +59,11 @@
             "date": 1686305144752,
             "name": "E:\\Next Level Course\\varsity-management-auth-service-yarn\\logs\\winston\\error\\rat-2023-09-06-16-error.log",
             "hash": "24154e139c94e6502186e62c7235bf84b7325ae09cb67fd91445453dce8f0438"
+        },
+        {
+            "date": 1686308403204,
+            "name": "E:\\Next Level Course\\varsity-management-auth-service-yarn\\logs\\winston\\error\\rat-2023-09-06-17-error.log",
+            "hash": "5c8d715b0ef58107e7268d40ab300958ba4c3c4ec80bc6497db53ae0848612db"
         }
     ],
     "hashType": "sha256"
